@@ -1,81 +1,146 @@
-/*
-Description:
-    Contains all the styles for the winning wheel page.
-    
-Verison History:
-    2012-01-28, Douglas McKechie
-    - Created based off earlier version.
-    
-    2015-09-26, Douglas McKechie
-    - Minor updates for the 2.0 winwheel example.
-*/
-
-body
-{
-    font-family: arial;
+html, body {
+  height:100%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: black;
 }
 
-/* Sets the background image for the wheel */
-td.the_wheel
-{
-    background-image: url(./resources/wheel_back.png);
-    background-position: center;
-    background-repeat: none;
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
 }
 
-/* Do some css reset on selected elements */
-h1, p
-{
-    margin: 0;
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+  /* Flex rules */
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
-div.power_controls
-{
-    margin-right:70px;
+.arrow-container {
+  text-align: center;
+  width: 100%;
+  margin-top: 15px;
+  position:absolute;
+  top:0px;
 }
 
-div.html5_logo
-{
-    margin-left:70px;
+.wheel-container {
+  text-align: center;
+  width: 100%;
+  margin-top: 35px;
 }
 
-/* Styles for the power selection controls */
-table.power
-{
-    background-color: #cccccc;
-    cursor: pointer;
-    border:1px solid #333333;
+.names-container {
+  position: absolute;
+  top: 0px;
 }
 
-table.power th
-{
-    background-color: white;
-    cursor: default;
+.canvas-button {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  overflow: hidden;
 }
 
-td.pw1
-{
-    background-color: #6fe8f0;
+/* Style the button that is used to open and close the collapsible content */
+.collapsible-button{
+  color: #fff;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0 10px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 50px;
+  font-weight: bold;
+}
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  width: 20vw;
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
 }
 
-td.pw2
-{
-    background-color: #86ef6f;
+.todo-list {
+  list-style-type: none;
+  padding-left: 0;
 }
 
-td.pw3
-{
-    background-color: #ef6f6f;
+span {
+  border-radius: 4px;
+  vertical-align: text-top;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 20px;
 }
 
-/* Style applied to the spin button once a power has been selected */
-.clickable
-{
-    cursor: pointer;
+li{
+  padding-top: 10px;
 }
 
-/* Other misc styles */
-.margin_bottom
-{
-    margin-bottom: 5px;
+.delete-todo {
+  vertical-align: middle;
+}
+
+input[type="image" i] {
+  width: 15px;
+  height: 15px;
+}
+
+.delete-button {
+  color: red;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-weight: bold;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 3px solid #000;
+}
+
+/* Add this below all the other styles */
+.empty-state {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.checklist-icon {
+  margin-bottom: 20px;
+}
+
+.empty-state__title, .empty-state__description {
+  margin-bottom: 20px;
+}
+
+/* Add this below the other styles */
+.todo-list:empty {
+  display: none;
+}
+
+.todo-list:empty + .empty-state {
+  display: flex;
 }
