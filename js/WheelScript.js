@@ -10,8 +10,8 @@ let theWheel = new Winwheel({
         [
             { fillStyle: '#eae56f', text: 'Akhil', id: Math.floor(Math.random() * Date.now()) },
             { fillStyle: '#89f26e', text: 'Andy', id: Math.floor(Math.random() * Date.now()) },
-            { fillStyle: '#7de6ef', text: 'Avery', id: Math.floor(Math.random() * Date.now()) },
             { fillStyle: '#c100be', text: 'David', id: Math.floor(Math.random() * Date.now()) },
+            { fillStyle: '#7de6ef', text: 'Davy', id: Math.floor(Math.random() * Date.now()) },
             { fillStyle: '#eae56f', text: 'Jia', id: Math.floor(Math.random() * Date.now()) },
             { fillStyle: '#dc89f3', text: 'Jiebo', id: Math.floor(Math.random() * Date.now()) },
             { fillStyle: '#e7706f', text: 'Juan', id: Math.floor(Math.random() * Date.now()) },
