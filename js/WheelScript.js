@@ -3,7 +3,7 @@ const TEXT_FONT_SIZE = 50;
 
 // Create new wheel object specifying the parameters at creation time.
 let theWheel = new Winwheel({
-    'numSegments': 13,     // Specify number of segments.
+    'numSegments': 15,     // Specify number of segments.
     'outerRadius': WHEEL_RADIUS,   // Set outer radius so wheel fits inside the background.
     'textFontSize': TEXT_FONT_SIZE,    // Set font size as desired.
     'segments':        // Define segments including colour and text.
@@ -14,9 +14,11 @@ let theWheel = new Winwheel({
             { fillStyle: '#7de6ef', text: 'Davy', id: Math.floor(Math.random() * Date.now()) },
             { fillStyle: '#eae56f', text: 'Jia', id: Math.floor(Math.random() * Date.now()) },
             { fillStyle: '#dc89f3', text: 'Jiebo', id: Math.floor(Math.random() * Date.now()) },
+            { fillStyle: '#96af30', text: 'Jonathan', id: Math.floor(Math.random() * Date.now()) },
             { fillStyle: '#e7706f', text: 'Juan', id: Math.floor(Math.random() * Date.now()) },
             { fillStyle: '#7de6ef', text: 'Katie', id: Math.floor(Math.random() * Date.now()) },
             { fillStyle: '#e7706f', text: 'Leo', id: Math.floor(Math.random() * Date.now()) },
+            { fillStyle: '#89f26e', text: 'Marcos', id: Math.floor(Math.random() * Date.now()) },
             { fillStyle: '#a128d8', text: 'Minh', id: Math.floor(Math.random() * Date.now()) },
             { fillStyle: '#d1b738', text: 'Nick', id: Math.floor(Math.random() * Date.now()) },
             { fillStyle: '#785ec4', text: 'Shirley', id: Math.floor(Math.random() * Date.now()) },
