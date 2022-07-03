@@ -3,25 +3,27 @@ const TEXT_FONT_SIZE = 50;
 
 // Create new wheel object specifying the parameters at creation time.
 let theWheel = new Winwheel({
-    'numSegments': 13,     // Specify number of segments.
+    'numSegments': 14,     // Specify number of segments.
     'outerRadius': WHEEL_RADIUS,   // Set outer radius so wheel fits inside the background.
     'textFontSize': TEXT_FONT_SIZE,    // Set font size as desired.
     'segments':        // Define segments including colour and text.
         [
-            { fillStyle: '#eae56f', text: 'Akhil', id: Math.floor(Math.random() * Date.now()) },
-            { fillStyle: '#89f26e', text: 'Andy', id: Math.floor(Math.random() * Date.now()) },
-            { fillStyle: '#c100be', text: 'David', id: Math.floor(Math.random() * Date.now()) },
-            { fillStyle: '#7de6ef', text: 'Davy', id: Math.floor(Math.random() * Date.now()) },
-            { fillStyle: '#dc89f3', text: 'Jiebo', id: Math.floor(Math.random() * Date.now()) },
-            { fillStyle: '#96af30', text: 'Jonathan', id: Math.floor(Math.random() * Date.now()) },
-            { fillStyle: '#e7706f', text: 'Juan', id: Math.floor(Math.random() * Date.now()) },
-            { fillStyle: '#e7706f', text: 'Leo', id: Math.floor(Math.random() * Date.now()) },
-            { fillStyle: '#89f26e', text: 'Marcos', id: Math.floor(Math.random() * Date.now()) },
-            { fillStyle: '#a128d8', text: 'Minh', id: Math.floor(Math.random() * Date.now()) },
-            { fillStyle: '#d1b738', text: 'Nick', id: Math.floor(Math.random() * Date.now()) },
-            { fillStyle: '#785ec4', text: 'Shirley', id: Math.floor(Math.random() * Date.now()) },
-            { fillStyle: '#96af30', text: 'Tyler', id: Math.floor(Math.random() * Date.now()) },
-        ],
+            { fillStyle: '#' + Math.floor(Math.random()*16777215).toString(16), text: 'Akhil', id: Math.floor(Math.random() * Date.now()) },
+            { fillStyle: '#' + Math.floor(Math.random()*16777215).toString(16), text: 'Andy', id: Math.floor(Math.random() * Date.now()) },
+            { fillStyle: '#' + Math.floor(Math.random()*16777215).toString(16), text: 'David', id: Math.floor(Math.random() * Date.now()) },
+            { fillStyle: '#' + Math.floor(Math.random()*16777215).toString(16), text: 'Davy', id: Math.floor(Math.random() * Date.now()) },
+            { fillStyle: '#' + Math.floor(Math.random()*16777215).toString(16), text: 'Jiebo', id: Math.floor(Math.random() * Date.now()) },
+            { fillStyle: '#' + Math.floor(Math.random()*16777215).toString(16), text: 'Jonathan', id: Math.floor(Math.random() * Date.now()) },
+            { fillStyle: '#' + Math.floor(Math.random()*16777215).toString(16), text: 'Juan', id: Math.floor(Math.random() * Date.now()) },
+            { fillStyle: '#' + Math.floor(Math.random()*16777215).toString(16), text: 'Leo', id: Math.floor(Math.random() * Date.now()) },
+            { fillStyle: '#' + Math.floor(Math.random()*16777215).toString(16), text: 'Marcos', id: Math.floor(Math.random() * Date.now()) },
+            { fillStyle: '#' + Math.floor(Math.random()*16777215).toString(16), text: 'Minh', id: Math.floor(Math.random() * Date.now()) },
+            { fillStyle: '#' + Math.floor(Math.random()*16777215).toString(16), text: 'Nick', id: Math.floor(Math.random() * Date.now()) },
+            { fillStyle: '#' + Math.floor(Math.random()*16777215).toString(16), text: 'Shirley', id: Math.floor(Math.random() * Date.now()) },
+            { fillStyle: '#' + Math.floor(Math.random()*16777215).toString(16), text: 'Tyler', id: Math.floor(Math.random() * Date.now()) },
+            { fillStyle: '#' + Math.floor(Math.random()*16777215).toString(16), text: 'Tyler', id: Math.floor(Math.random() * Date.now()) },
+            { fillStyle: '#' + Math.floor(Math.random()*16777215).toString(16), text: 'Paola', id: Math.floor(Math.random() * Date.now()) },
+        ].sort( () => Math.random() - 0.5),
     'animation':           // Specify the animation to use.
     {
         'type': 'spinToStop',
@@ -30,6 +32,11 @@ let theWheel = new Winwheel({
         'callbackFinished': alertPrize,
     }
 });
+
+function randomizeSegments() {
+    let segments = [];
+    
+}
 
 // -------------------------------------------------------
 // Called when the spin animation has finished by the callback feature of the wheel because I specified callback in the parameters
