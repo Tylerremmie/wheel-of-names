@@ -117,6 +117,7 @@ function renderNames(todo) {
     } else {
         list.append(node);
     }
+    list.sort();
 }
 
 // -------------------------------------------------------
