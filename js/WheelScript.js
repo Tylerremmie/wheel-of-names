@@ -21,8 +21,7 @@ let theWheel = new Winwheel({
             { fillStyle: '#' + Math.floor(Math.random()*16777215).toString(16), text: 'Nick', id: Math.floor(Math.random() * Date.now()) },
             { fillStyle: '#' + Math.floor(Math.random()*16777215).toString(16), text: 'Shirley', id: Math.floor(Math.random() * Date.now()) },
             { fillStyle: '#' + Math.floor(Math.random()*16777215).toString(16), text: 'Tyler', id: Math.floor(Math.random() * Date.now()) },
-            { fillStyle: '#' + Math.floor(Math.random()*16777215).toString(16), text: 'Tyler', id: Math.floor(Math.random() * Date.now()) },
-            { fillStyle: '#' + Math.floor(Math.random()*16777215).toString(16), text: 'Paola', id: Math.floor(Math.random() * Date.now()) },
+            { fillStyle: '#' + Math.floor(Math.random()*16777215).toString(16), text: 'Ver', id: Math.floor(Math.random() * Date.now()) },
         ].sort( () => Math.random() - 0.5),
     'animation':           // Specify the animation to use.
     {
