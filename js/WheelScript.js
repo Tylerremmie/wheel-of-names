@@ -86,7 +86,22 @@ function resetWheel() {
 // Name functionality.
 // -------------------------------------------------------
 
-let nameList = theWheel.segments.filter(segment => segment != null);
+let nameList = theWheel.segments
+    .filter(segment => segment != null)
+    .sort((a, b) => sortNames(a, b));
+
+// -------------------------------------------------------
+// Function for sort the list of names.
+// -------------------------------------------------------
+function sortNames(a, b) {
+    if (a.text < b.text) {
+        return -1;
+    }
+    if (a.text > b.text) {
+        return 1;
+    }
+    return 0;
+}
 
 // -------------------------------------------------------
 // Function for render the list of names.
