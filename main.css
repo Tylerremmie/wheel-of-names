@@ -1,5 +1,6 @@
-html, body {
-  height:100%;
+html,
+body {
+  height: 100%;
   padding: 0;
   margin: 0;
   border: 0;
@@ -10,7 +11,7 @@ input:focus,
 select:focus,
 textarea:focus,
 button:focus {
-    outline: none;
+  outline: none;
 }
 
 
@@ -28,8 +29,8 @@ button:focus {
   text-align: center;
   width: 100%;
   margin-top: 15px;
-  position:absolute;
-  top:0px;
+  position: absolute;
+  top: 0px;
 }
 
 .wheel-container {
@@ -51,7 +52,7 @@ button:focus {
 }
 
 /* Style the button that is used to open and close the collapsible content */
-.collapsible-button{
+.collapsible-button {
   color: #fff;
   background-color: transparent;
   cursor: pointer;
@@ -62,6 +63,7 @@ button:focus {
   font-size: 50px;
   font-weight: bold;
 }
+
 /* Style the collapsible content. Note: hidden by default */
 .content {
   width: 20vw;
@@ -84,7 +86,7 @@ span {
   font-size: 20px;
 }
 
-li{
+li {
   padding-top: 10px;
 }
 
@@ -132,7 +134,8 @@ input[type="text"] {
   margin-bottom: 20px;
 }
 
-.empty-state__title, .empty-state__description {
+.empty-state__title,
+.empty-state__description {
   margin-bottom: 20px;
 }
 
@@ -141,6 +144,6 @@ input[type="text"] {
   display: none;
 }
 
-.todo-list:empty + .empty-state {
+.todo-list:empty+.empty-state {
   display: flex;
 }

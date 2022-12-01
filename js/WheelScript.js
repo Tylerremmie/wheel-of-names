@@ -8,21 +8,21 @@ let theWheel = new Winwheel({
     'textFontSize': TEXT_FONT_SIZE,    // Set font size as desired.
     'segments':        // Define segments including colour and text.
         [
-            { fillStyle: '#' + Math.floor(Math.random()*16777215).toString(16), text: 'Akhil', id: Math.floor(Math.random() * Date.now()) },
-            { fillStyle: '#' + Math.floor(Math.random()*16777215).toString(16), text: 'Andy', id: Math.floor(Math.random() * Date.now()) },
-            { fillStyle: '#' + Math.floor(Math.random()*16777215).toString(16), text: 'David', id: Math.floor(Math.random() * Date.now()) },
-            { fillStyle: '#' + Math.floor(Math.random()*16777215).toString(16), text: 'Davy', id: Math.floor(Math.random() * Date.now()) },
-            { fillStyle: '#' + Math.floor(Math.random()*16777215).toString(16), text: 'Jiebo', id: Math.floor(Math.random() * Date.now()) },
-            { fillStyle: '#' + Math.floor(Math.random()*16777215).toString(16), text: 'Jonathan', id: Math.floor(Math.random() * Date.now()) },
-            { fillStyle: '#' + Math.floor(Math.random()*16777215).toString(16), text: 'Juan', id: Math.floor(Math.random() * Date.now()) },
-            { fillStyle: '#' + Math.floor(Math.random()*16777215).toString(16), text: 'Leo', id: Math.floor(Math.random() * Date.now()) },
-            { fillStyle: '#' + Math.floor(Math.random()*16777215).toString(16), text: 'Marcos', id: Math.floor(Math.random() * Date.now()) },
-            { fillStyle: '#' + Math.floor(Math.random()*16777215).toString(16), text: 'Minh', id: Math.floor(Math.random() * Date.now()) },
-            { fillStyle: '#' + Math.floor(Math.random()*16777215).toString(16), text: 'Nick', id: Math.floor(Math.random() * Date.now()) },
-            { fillStyle: '#' + Math.floor(Math.random()*16777215).toString(16), text: 'Shirley', id: Math.floor(Math.random() * Date.now()) },
-            { fillStyle: '#' + Math.floor(Math.random()*16777215).toString(16), text: 'Tyler', id: Math.floor(Math.random() * Date.now()) },
-            { fillStyle: '#' + Math.floor(Math.random()*16777215).toString(16), text: 'Ver', id: Math.floor(Math.random() * Date.now()) },
-        ].sort( () => Math.random() - 0.5),
+            { fillStyle: '#' + Math.floor(Math.random() * 16777215).toString(16), text: 'Akhil', id: Math.floor(Math.random() * Date.now()) },
+            { fillStyle: '#' + Math.floor(Math.random() * 16777215).toString(16), text: 'Andy Y.', id: Math.floor(Math.random() * Date.now()) },
+            { fillStyle: '#' + Math.floor(Math.random() * 16777215).toString(16), text: 'Andy B.', id: Math.floor(Math.random() * Date.now()) },
+            { fillStyle: '#' + Math.floor(Math.random() * 16777215).toString(16), text: 'David', id: Math.floor(Math.random() * Date.now()) },
+            { fillStyle: '#' + Math.floor(Math.random() * 16777215).toString(16), text: 'Davy', id: Math.floor(Math.random() * Date.now()) },
+            { fillStyle: '#' + Math.floor(Math.random() * 16777215).toString(16), text: 'Jiebo', id: Math.floor(Math.random() * Date.now()) },
+            { fillStyle: '#' + Math.floor(Math.random() * 16777215).toString(16), text: 'Jonathan', id: Math.floor(Math.random() * Date.now()) },
+            { fillStyle: '#' + Math.floor(Math.random() * 16777215).toString(16), text: 'Leo', id: Math.floor(Math.random() * Date.now()) },
+            { fillStyle: '#' + Math.floor(Math.random() * 16777215).toString(16), text: 'Marcos', id: Math.floor(Math.random() * Date.now()) },
+            { fillStyle: '#' + Math.floor(Math.random() * 16777215).toString(16), text: 'Minh', id: Math.floor(Math.random() * Date.now()) },
+            { fillStyle: '#' + Math.floor(Math.random() * 16777215).toString(16), text: 'Nick', id: Math.floor(Math.random() * Date.now()) },
+            { fillStyle: '#' + Math.floor(Math.random() * 16777215).toString(16), text: 'Shirley', id: Math.floor(Math.random() * Date.now()) },
+            { fillStyle: '#' + Math.floor(Math.random() * 16777215).toString(16), text: 'Tyler', id: Math.floor(Math.random() * Date.now()) },
+            { fillStyle: '#' + Math.floor(Math.random() * 16777215).toString(16), text: 'Ver', id: Math.floor(Math.random() * Date.now()) },
+        ].sort(() => Math.random() - 0.5),
     'animation':           // Specify the animation to use.
     {
         'type': 'spinToStop',
@@ -34,7 +34,7 @@ let theWheel = new Winwheel({
 
 function randomizeSegments() {
     let segments = [];
-    
+
 }
 
 // -------------------------------------------------------
