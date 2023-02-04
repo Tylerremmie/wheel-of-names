@@ -3,7 +3,7 @@ const TEXT_FONT_SIZE = 50;
 
 // Create new wheel object specifying the parameters at creation time.
 let theWheel = new Winwheel({
-    'numSegments': 14,     // Specify number of segments.
+    'numSegments': 11,     // Specify number of segments.
     'outerRadius': WHEEL_RADIUS,   // Set outer radius so wheel fits inside the background.
     'textFontSize': TEXT_FONT_SIZE,    // Set font size as desired.
     'segments':        // Define segments including colour and text.
@@ -13,13 +13,10 @@ let theWheel = new Winwheel({
             { fillStyle: '#' + Math.floor(Math.random() * 16777215).toString(16), text: 'Andy B.', id: Math.floor(Math.random() * Date.now()) },
             { fillStyle: '#' + Math.floor(Math.random() * 16777215).toString(16), text: 'David', id: Math.floor(Math.random() * Date.now()) },
             { fillStyle: '#' + Math.floor(Math.random() * 16777215).toString(16), text: 'Davy', id: Math.floor(Math.random() * Date.now()) },
-            { fillStyle: '#' + Math.floor(Math.random() * 16777215).toString(16), text: 'Jiebo', id: Math.floor(Math.random() * Date.now()) },
             { fillStyle: '#' + Math.floor(Math.random() * 16777215).toString(16), text: 'Jonathan', id: Math.floor(Math.random() * Date.now()) },
             { fillStyle: '#' + Math.floor(Math.random() * 16777215).toString(16), text: 'Leo', id: Math.floor(Math.random() * Date.now()) },
             { fillStyle: '#' + Math.floor(Math.random() * 16777215).toString(16), text: 'Marcos', id: Math.floor(Math.random() * Date.now()) },
-            { fillStyle: '#' + Math.floor(Math.random() * 16777215).toString(16), text: 'Minh', id: Math.floor(Math.random() * Date.now()) },
             { fillStyle: '#' + Math.floor(Math.random() * 16777215).toString(16), text: 'Nick', id: Math.floor(Math.random() * Date.now()) },
-            { fillStyle: '#' + Math.floor(Math.random() * 16777215).toString(16), text: 'Shirley', id: Math.floor(Math.random() * Date.now()) },
             { fillStyle: '#' + Math.floor(Math.random() * 16777215).toString(16), text: 'Tyler', id: Math.floor(Math.random() * Date.now()) },
             { fillStyle: '#' + Math.floor(Math.random() * 16777215).toString(16), text: 'Ver', id: Math.floor(Math.random() * Date.now()) },
         ].sort(() => Math.random() - 0.5),
